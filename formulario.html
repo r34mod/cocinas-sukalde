@@ -85,8 +85,10 @@
             <hr style="border: 0;border-top: 3px solid rgba(39,39,39,0.89); color: white; width: 130px">
         </h2>
         <br>
+        <p>Puedes también contactar por correo <a href="mailto:cocinassukalde@gmail.com?Subject=Interesado%20en%20sus%20cocinas"> dandole a este enlace</a> 
+        si deseas consultar alguna de las cocinas</p>
         <div class="row -subsection- -subsection-img">
-              <form class="form">
+              <form class="form" action="enviar.php" method="POST">
         <div class="form__image-box">
             
             <!--<img src="https://cdn.onlinewebfonts.com/svg/img_538967.png" class="form__image-box__icon">-->
@@ -98,56 +100,57 @@
         </div>
 
         <div class="form__fields">
-            
-            <h3 class="form__fields__heading">
-                Nombre
-            </h3>
-            <input type="text" class="form-field text-field" placeholder="Escribe tu nombre">
-            
-            <h3 class="form__fields__heading">
-                Apellidos
-            </h3>
-            <input type="text" class="form-field text-field" id="username" 
-            placeholder="Escribe tus apellidos">
-            
+            <!--<form method="POST">-->
+                <h3 class="form__fields__heading">
+                    Nombre
+                </h3>
+                <input type="text" name="nombre" required="required" class="form-field text-field" placeholder="Escribe tu nombre">
 
-            <h3 class="form__fields__heading">
-                Correo Electrónico
-            </h3>
-            <input type="email" name="Correo" class="form-field text-field" placeholder="ejemplo@gmail.com">
-			
-           	<h3 class="form__fields__heading">
-				Número de Telefono
-			</h3>
-			<input type="tel" name="Teléfono" class="form-field text-field" placeholder="691234590">
-            
-           	
+                <h3 class="form__fields__heading">
+                    Apellidos
+                </h3>
+                <input type="text" name="apel" class="form-field text-field" required="required" id="username"
+                       placeholder="Escribe tus apellidos">
 
-            <h3 class="form__fields__heading">
-                Cocina Elegida
-            </h3>
-            <select name="kitchen">
-				<option value="Rey">Rey</option>
-				<option value="Madrid">Madrid</option>
-				<option value="Londres">Londres</option>
-				<option value="Oslo">Oslo</option>
-				<option value="Tundra">Tundra</option>
-			</select>
-			    
-			
-			<h3 class="form__fields__heading">
-				Electrodomestico
-			</h3>
-			<input type="text" class="form-field text-field"
-				   placeholder="Horno" name="Electrodomestico">
-			
-			<h3 class="form__fields__heading">
-				Añadir comentarios
-			</h3>
-			<textarea name="texto" placeholder="Escriba algo"></textarea>
-           	<br>
-			<br>
-			<form action="yasie@hotmail.es" method="post" enctype="text/plain"> <a href="#" class="btn">SUBMIT</a></form>
+
+                <h3 class="form__fields__heading">
+                    Correo Electrónico
+                </h3>
+                <input type="email" name="email" class="form-field text-field" placeholder="ejemplo@gmail.com" required="required">
+
+                <h3 class="form__fields__heading">
+                    Número de Telefono
+                </h3>
+                <input type="tel" name="telefono" class="form-field text-field" placeholder="691234590" required="required">
+
+
+
+                <h3 class="form__fields__heading">
+                    Cocina Elegida
+                </h3>
+                <select name="kitchen">
+                    <option value="Rey">Rey</option>
+                    <option value="Madrid">Madrid</option>
+                    <option value="Londres">Londres</option>
+                    <option value="Oslo">Oslo</option>
+                    <option value="Tundra">Tundra</option>
+                </select>
+
+
+                <h3 class="form__fields__heading">
+                    Electrodomestico
+                </h3>
+                <input type="text" class="form-field text-field"
+                       placeholder="Horno" name="electrodomestico">
+
+                <h3 class="form__fields__heading">
+                    Añadir comentarios
+                </h3>
+                <textarea name="mensaje" placeholder="Escriba algo"></textarea>
+                <br>
+                <br>
+                <button class="btn" type="submit">Enviar</button>
+            </form>
 
         </div>
     </form><br>
