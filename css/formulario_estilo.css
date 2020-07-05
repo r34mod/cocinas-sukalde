@@ -31,7 +31,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-image: /*url("https://www.alfabetajuega.com/abj_public_files/multimedia/imagenes/201604/144304.alfabetajuega.unreal-engine-4-apartamento-1-12062016.jpg");*/
-	url("https://cdnb.artstation.com/p/assets/images/images/009/093/669/large/marcus-wilhelmstaetter-kitchen-4k.jpg?1517101974");
+	url("https://www.dropbox.com/s/xgyh1si7qeqw28n/photo_2020-07-04_09-40-07.jpg?dl=1");
     background-repeat: no-repeat;
 }
 .-header-items {
@@ -64,17 +64,17 @@ body {
     transition-timing-function: ease;
 }
 .-header-content-items-option a, .-footer-links a {
-    color: white;
+    color: black;
     transition: 0.5s;
 }
 .-header-content-items-option a, .-footer-links a:hover {
     text-decoration: none;
-    color: #eaeaea;
+    color: #1a1a1a;
 }
 .-header-content-items-option:hover {
-    border: 2px solid white;
+    border: 2px solid black;
     border-width: 0 0 2px 0;
-    text-shadow: 0 0 10px white;
+    text-shadow: 0 0 10px black;
 }
 .-header-content-resp-item a {
     color: rgba(0, 0, 0, 0.9);
