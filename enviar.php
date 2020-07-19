@@ -5,20 +5,20 @@ $mail = $_POST['email'];
 $number = $_POST['telefono'];
 $cocina = $_POST['kitchen'];
 $electrodomestico = $_POST['electrodomestico'];
-$empresa = $_POST['mensaje'];
+$empresa = $_POST['msg'];
 
 $header = 'From: ' . $mail . " \r\n";
 $header .= "X-Mailer: PHP/" . phpversion() . " \r\n";
 $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
-$mensaje = "Este mensaje fue enviado por " . $nombre . "\nApellido" . $apel . ",\r\n";
-$mensaje .= "Su e-mail es: " . $mail . " \r\n";
-$mensaje .= "Mensaje: " .  $cocina . " electrodomestico " . $electrodomestico . " \r\n";
-$mensaje .= "Enviado el " . date('d/m/Y', time());
+//$mensaje = "Este mensaje fue enviado por ".$nombre ."\nApellido".$apel .",\r\n";
+//$mensaje .= "Su e-mail es: ".$mail ." \r\n";
+$mensaje .= "El cliente ".$nombre ." ".$apel ." Tlf: ".$number ."Mensaje: ".$cocina ." electrodomestico ".$electrodomestico ." e informacón adicional ".$empresa ."\r\n";
+//$mensaje .= "Enviado el " . date('d/m/Y', time());
 
-$para = 'cocinassukalde@gmail.com';
-$asunto = 'Cocinas%20Sukalde%20Cliente';
+$para = 'sukaldeclientes@gmail.com';
+$asunto = 'Cocinas_Sukalde_Cliente';
 
 mail($para, $asunto, utf8_decode($mensaje), $header);
 echo "<script>alert('Correo enviado exitosamente')</script>";
